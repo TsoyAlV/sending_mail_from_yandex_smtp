@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: url(https://basik.ru/images/landscapes_walls/08_landscape.jpg); width: 90%
+repeat: auto;">
+<img src="https://basik.ru/images/landscapes_walls/08_landscape.jpg" alt="куку" style="width: 40%; float: right">
+    <h2>{{ appointment.client_name }} Спасибо за запись!</h2>
+    <p> Вы записаны на {{ appointment.date|date:"d-M-Y" }} по вопросу: {{ appointment.message|truncatechars:50 }} </p>
+
+</body>
+</html>
